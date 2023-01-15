@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DemoListUsers';
+  demoVariable = "THis is a demo";
 }

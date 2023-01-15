@@ -1,0 +1,19 @@
+<h1>Lista de usuarios</h1>
+<button type="button" class="btn btn-primary" (click)="abrirCrearUsuario()">Crear usuario</button> 
+<table class="table">
+    <thead>
+      <tr> 
+        <th scope="col">Cédula</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users"> 
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
